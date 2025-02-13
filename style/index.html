@@ -55,45 +55,33 @@
               class="py-2 text-sm text-gray-700 dark:text-gray-200"
               aria-labelledby="dropdown-button"
             >
-              <li>
+              <li onclick="myfunction('Quoted id')">
                 <a
-                  href="#"
+                  href=""
                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                  >Shopping</a
+                  >Quoted's Id</a
                 >
               </li>
-              <li>
+              <li onclick="myfunction('Quoted title')">
                 <a
                   href="#"
                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                  >Images</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                  >News</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                  >Finance</a
+                  >Quoted's title</a
                 >
               </li>
             </ul>
           </div>
           <div class="relative w-full">
             <input
+              onclick="myfunction('')"
               type="search"
               id="search-dropdown"
               class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg rounded-s-gray-100 rounded-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
               placeholder="Search"
-              required
+              disabled
             />
             <button
+              onclick="handleSearch('inputbtb')"
               type="submit"
               class="absolute top-0 end-0 p-4 h-full text-sm font-medium text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
@@ -128,7 +116,7 @@
           alt="image description"
         />
         <div>
-          <h6 class="text-2xl font-bold">it's okey</h6>
+          <h6 id="quoteTitle" class="text-2xl font-bold">it's okey</h6>
           <p>
             it's ok if you don't know what it will look like at the TOP. take it
             ONE STEP a time
@@ -137,5 +125,6 @@
       </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="javascript.js"></script>
   </body>
 </html>
